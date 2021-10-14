@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(238, 157, 143);
+    color: white;
+    font-family:cursive;
+    font-weight:lighter;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36;
+    margin-left: 3em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#tomatoImg{
+    display: flex;
+    justify-content: right;
+}
+
+.headerText{
+    display: flex;
+}
+#timer {
+   
+    margin: 50px auto 0;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 10px 0 20px;
+} 
+
+.buttons {
+    width: fit-content;
+    margin: auto;
+    cursor: url('./tomato\ cursor.cur'), auto;
+}
+
+.button {
+    float: left;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: url('./tomato\ cursor.cur'), auto;
+}
+
+#countdown {
+    clear: both;
+    width: fit-content;
+    margin: auto;
+    font-size: 90px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#start-btn {
+    width: 40px;
+    margin: 10px auto 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: tomato;
+    cursor: url('./tomato\ cursor.cur'), auto;
+    }
+}
+
+.selected {
+    background-color:tomato;
+} 
+
+#current-task-display {
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+#timer {
+    width: 800px
+}
+
+/*new portion*/
+
+#input-container {
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+}
+
+#items-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#list {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.list-item {
+    background-color:rgb(153, 241, 153);
+    padding: 3%;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    display: table;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+label {
+    display: table-cell;
+    width: 100%;
+}
+
+button {
+    background-color:tomato;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: url('./tomato\ cursor.cur'), auto;
+}
+
+#button {
+    text-align: right;
+}
+
+.delete-button {
+    background-color: green;
+    margin-left: 0.5rem;
+    display: inline-block;
+    text-align: right;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+#todo-form {
+    color: tomato;
+}
+
+@media (min-width: 750px) {
+    #items-container {
+        width: 60%;
+    }
+
+    #input-container {
+        width:60%
+    }
+}
+
+@media (min-width: 900px) {
+    #items-container {
+        width: 40%;
+    }
+
+    #input-container {
+        width:40%
+    }
+}
